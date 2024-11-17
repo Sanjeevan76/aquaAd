@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AquaAd</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .navbar .arrow-link {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .navbar .arrow-link:hover {
+            background: #f4f4f4;
+            transform: scale(1.1);
+        }
+        .navbar .arrow-link i {
+            font-size: 1.2rem;
+            color: #2575fc;
+        }
+        /* Contact form iframe styling */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 50px); /* Adjust height to fit below navbar */
+            padding: 20px;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            max-width: 600px;
+            height: 700px; /* Increased height for better visibility */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">AquaAd</div>
+        <a href="./index.html" class="arrow-link">
+            <i>&#8594;</i> <!-- HTML entity for a right arrow -->
+        </a>
+    </div>
+    
+    <!-- Form Container -->
+    <div class="form-container">
+        <!-- Replace the src with your Google Form link -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHG3l7_5ZyR9D_gF6gQwRnYuPzftLAwF59DF7dzgPVrlg1xg/viewform?usp=sf_link"></iframe>
+    </div>
+</body>
+</html>

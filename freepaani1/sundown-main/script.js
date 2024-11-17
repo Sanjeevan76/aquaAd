@@ -36,17 +36,17 @@ function menuAnimation() {
     var full = document.querySelector("#full-scr")
     var navimg = document.querySelector("nav img")
     var flag = 0
-    menu.addEventListener("click", function () {
-        if (flag == 0) {
-            full.style.top = 0
-            navimg.style.opacity = 0
-            flag = 1
-        } else {
-            full.style.top = "-100%"
-            navimg.style.opacity = 1
-            flag = 0
-        }
-    })
+    // menu.addEventListener("click", function () {
+    //     if (flag == 0) {
+    //         full.style.top = 0
+    //         navimg.style.opacity = 0
+    //         flag = 1
+    //     } else {
+    //         full.style.top = "-100%"
+    //         navimg.style.opacity = 1
+    //         flag = 0
+    //     }
+    // })
 }
 
 function loaderAnimation() {
@@ -60,3 +60,24 @@ swiperAnimation()
 page4Animation()
 menuAnimation()
 loaderAnimation()
+
+
+
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
